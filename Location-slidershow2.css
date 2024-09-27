@@ -1,0 +1,87 @@
+.slidershow2{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    color: #fff;
+    /*溢出隐藏*/
+    overflow: hidden;
+}
+.slidershow2 ul{
+    padding: 0;
+    width: calc(900px * 4);
+    transition: 0.5s;
+}
+.slidershow2 li{
+    float: left;
+    width: 800px;
+    height: 500px;
+    list-style: none;
+    line-height: 500px;
+    font-size: 50px;
+}
+.slidershow2 li:nth-child(1){
+    background-image: url(./Location-images/轮播图1.jpg);
+}
+.slidershow2 li:nth-child(2){
+    background-image: url(./Location-images/轮播图2.png);
+}
+.slidershow2 li:nth-child(3){
+    background-image: url(./Location-images/轮播图3.jpg);
+}
+.slidershow2 li:nth-child(4){
+    background-image: url(./Location-images/轮播图4.jpg);
+}
+/*for属性值以indicator开头的所有label元素(指示器)*/
+.slidershow2 label[for^="indicator"]{
+    position: absolute;
+    top: 450px;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.slidershow2 label[for="indicator5"]{
+    left: 44%;
+}
+.slidershow2 label[for="indicator6"]{
+    left: 49%;
+}
+.slidershow2 label[for="indicator7"]{
+    left: 54%;
+}
+.slidershow2 label[for="indicator8"]{
+    left: 58%;
+}
+/*选中指示器设置ul的margin-left*/
+#indicator5:checked ~ ul{
+    margin-left: 0;
+}
+#indicator6:checked ~ ul{
+    margin-left: -800px;
+}
+#indicator7:checked ~ ul{
+    margin-left: -1600px;
+}
+#indicator8:checked ~ ul{
+    margin-left: -2400px;
+}
+/*选中指示器改变指示颜色*/
+#indicator5:checked ~ label[for="indicator5"]{
+    background-color: #fff;
+}
+#indicator6:checked ~ label[for="indicator6"]{
+    background-color: #fff;
+}
+#indicator7:checked ~ label[for="indicator7"]{
+    background-color: #fff;
+}
+#indicator8:checked ~ label[for="indicator8"]{
+    background-color: #fff;
+}

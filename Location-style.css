@@ -1,0 +1,287 @@
+/*头部样式开始*/
+.header{
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+}
+.wrap{
+    width: 1226px;
+    margin: 0,auto;
+}
+.header-left{
+    float: left;
+}
+.header-left li{
+    float: left;
+    font-size: 18px;
+    list-style: none;
+    line-height: 40px;
+    margin-left: 18px;
+}
+.header-left li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.header-left li a i{
+    font-size: 18px;
+    margin-left: 5px;
+}
+.header-left li a:hover{
+    color: #ff6700;
+}
+.header-right{
+    float: right;
+}
+.header-right li{
+    float: left;
+    font-size: 18px;
+    list-style: none;
+    line-height: 40px;
+    margin-right: 18px;
+}
+.header-right li a{
+    color: #fff;
+    text-decoration: none;
+}
+.header-right li a i{
+    font-size: 18px;
+    margin-left: 5px;
+}
+/*头部样式结束*/
+
+/*购物车开始*/
+.cart {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background-color: gray;
+    margin-left: 35px;
+    cursor: pointer;
+}
+.cart:hover {
+    background-color: #fff;
+}
+.cart:hover > a {
+    color: blue;
+}
+.cart-list {
+    z-index: 850;
+    position: absolute;
+    top: 40px;
+    width: 316px;
+    height: 0;
+    overflow: hidden;
+    line-height: 100px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+    transition: all .3s;
+}
+.cart:hover > .cart-list {
+    height: 100px;
+}
+/*购物车结束*/
+
+
+
+/*主体样式开始*/
+
+/*广告样式*/
+.adv-left{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    transition: all .2s linear;
+}
+.adv-left img{
+    float: left;
+    margin-top: 30px;
+}
+.adv-right{
+    float: right;
+    width: 210px;
+    height: 500px;
+    transition: all .2s linear;
+}
+.adv-left:hover,.adv-right:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+}
+/*广告样式结束*/
+/*定位样式开始*/
+.location-head li{
+    float: left;
+    margin-left: 24px;
+    font-size: 18px;
+    list-style: none;
+}
+.location-head li a{
+    text-decoration: none;
+}
+.location-head li a:hover{
+    color: #ff6700;
+}
+.location-head li i{
+    margin-right: 3px;
+    font-size: 14px;
+}
+.location-beijing{
+    float: left;
+    margin-left: 18px;
+    margin-top: 10px;
+}
+.location-beijing li{
+    margin-top: 28px;
+    list-style: none;
+}
+.location-beijing li a{
+    text-decoration: none;
+}
+.location-beijing li a:hover{
+    color: #ff6700;
+}
+.location-beijing li a i{
+    font-size: 14px;
+}
+.container-location {
+    float: left;
+    width: 800px;
+    height: 500px;
+    margin-top: -430px;
+    margin-left: 240px;
+}
+.items {
+    float: left;
+    width: 250px;
+    height: 205px;
+    list-style: none;
+    transition: all .2s linear;
+    border: 1px solid #fff;
+}
+.items a{
+    text-decoration: none;
+}
+.items:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+}
+.goods-img {
+    width: 250px;
+    height: 150px;
+}
+.goods-name {
+    margin-top: 2px;
+    margin-left: 40px;
+}
+.goods-desc {
+    margin-top: -10px;
+    margin-left: 60px;
+    color: gray;
+    font-size: 14px;
+}
+h1{
+    color: gray;
+    text-align: center;
+    font-size: 23px;
+    line-height: 70px;
+}
+.h1 i{
+    font-size: 18px;
+}
+/*定位样式结束*/
+
+/*高校合作样式开始*/
+.comment{
+    clear: both;
+    width: 100%;
+    height: 150px;
+}
+.comment img{
+    margin-top: 15px;
+    margin-left: 70px;
+}
+.location-school-head li{
+    float: left;
+    list-style: none;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.location-school-head i{
+    font-size:15px;
+}
+.location-school-beijing li{
+    clear: both;
+    margin-left: 50px;
+    font-size: 16px;
+    line-height: 40px;
+    list-style: none;
+}
+.location-school-beijing i{
+    font-size: 13px;
+}
+.location-school-head a{
+    text-decoration: none;
+}
+.location-school-head a:hover,.location-school-beijing a:hover{
+    color: #ff6700;
+}
+.school{
+    width: 900px;
+    height: 500px;
+    margin-left: 190px;
+    margin-top: -480px;
+}
+.school-adv{
+    width: 250px;
+    height: 550px;
+    float: right;
+    margin-top: -500px;
+    transition: all .2s linear;
+    background-color: #fbf8f8;
+}
+.school-adv:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+}
+.school-adv img{
+    width: 250px;
+    height: 200px;
+    margin-top: 10px;
+}
+.school-adv p{
+    font-size: 18px;
+    line-height: 35px;
+    color: #ff6700;
+    font-weight: 600;
+}
+.school1 li{
+    list-style: none;
+    margin-top: -2px;
+}
+.school1 img{
+    width: 300px;
+    height: 205px;
+}
+.school1 h2{
+    line-height: 10px;
+    margin-left: -20px;
+}
+.school1 p{
+    font-size: 16px;
+}
+.school1 a{
+    font-size: 16px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.school1 a:hover{
+    color: #ff6700;
+}
+.school ul{
+    float: left;
+    margin-left: 40px;
+    margin-top: -10px;
+}
+.school2 li{
+    margin-left: 500px;
+}
+/*主体样式结束*/
